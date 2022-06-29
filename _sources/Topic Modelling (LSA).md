@@ -28,9 +28,13 @@ tahap Ltent Semantic Analysis meliputi :
 Langkah pertama pada topik modelling menggunakan LSA adalah menghitung TF-IDF. TF-IDF dihitung menggunakan matrix mxn. Dimana m merupakan dokumen dan n merupakan fitur tiap kata pada dokumen. TF-IDF atau Term frequency-Inverse document frequency memberikan bobot untuk term j dalam dokumen i.
 
 Perhitungan TF-IDF dapat dilakukan dengan :
+
+
 $$
 W_{i,j}=tfi,j\times\log \dfrac{N}{d_{fj}}
 $$
+
+
 **Keterangan :**
 
 Wij = score TF-IDF
@@ -77,13 +81,21 @@ SVD merupakan proses menemukan informasi yang paling penting dengan menggunakan 
 \-    Matrix baris ortogonal, (U)
 
 \-    Singular matrix (S)
+
+
 $$
 M=U*S*V
 $$
+
+
 Sementara itu pada SVD dilakukan perhitungan terhadap matrix U dan juga Matrix V. dengan rumus :
+
+
 $$
 A=USV^{T}
 $$
+
+
 Keterangan :
 
 Matriks U = pada matriks ini, baris mewakili vector dokumen pada topik
