@@ -52,7 +52,7 @@ print(dataPTA['Abstrak'].head(5))
 print('\n\n\n')
 ```
 
-## Tokenizing
+## Tokenisasi
 
 *Tokenizing* merupakan salah satu tahap preprocessing yang merupakan tahap untuk memotong atau membuat kalimat menjadi potongan kata.
 

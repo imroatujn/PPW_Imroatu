@@ -8,7 +8,7 @@ Algoritma Topic Modelling :
 
 \-    Setiap topik berhubungan dengan kata-kata.
 
-Terdapat beberapa macam topic modelling, yang sering digunakan adalah Latent Dirchlet Allocation (LDA) dan Latent Semantic Analysis (LSA)
+Terdapat beberapa macam topic modelling, yang sering digunakan adalah Latent Dirchlet Allocation (LDA) dan Latent Semantic Analysis (LSA).
 
 ## Mengapa Menggunakan LSA?
 
