@@ -54,7 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="References" href="References.html" />
     <link rel="prev" title="Topic Modelling - LSA (Latent Semantic Analysis)" href="Topic%20Modelling%20%28LSA%29.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -134,11 +133,6 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    K-Means
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="References.html">
-   References
   </a>
  </li>
  <li class="toctree-l1">
@@ -444,7 +438,7 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="k-means">
 <h1>K-Means<a class="headerlink" href="#k-means" title="Permalink to this headline">#</a></h1>
 <p>K-Means Merupakan salah satu metode data mining untuk mengelompokkan suatu data ke dalam klaster. metode ini melakukan penghitungan jarak berdasarkan k tertangga terdekatnya</p>
-<p>untuk menghiyung jarak, dapat emnggunakan euclidean distance dengan rumus :</p>
+<p>untuk menghitung jarak, dapat menggunakan euclidean distance dengan rumus :</p>
 <div class="math notranslate nohighlight">
 \[
 d=\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}}
@@ -508,7 +502,7 @@ W_{i,j}=tfi,j\times\log \dfrac{N}{d_{fj}}
 </section>
 <section id="melakukan-reduksi-dimensi">
 <h3>Melakukan Reduksi Dimensi<a class="headerlink" href="#melakukan-reduksi-dimensi" title="Permalink to this headline">#</a></h3>
-<p>reduksi dimensi merupakan langkah yang digunakan untuk mengurangi fitur, pada tahap ini dilakukan dengan metode PCA. metode PCA (<em>Principal component analysis</em>) merupakan suatu teknik yang digunakan untukmengurangi tabel dalam sklaa besar. pada python dapat digunakan dengan menggunakan kode berikut :</p>
+<p>reduksi dimensi merupakan langkah yang digunakan untuk mengurangi fitur, pada tahap ini dilakukan dengan metode PCA. metode PCA (<em>Principal component analysis</em>) merupakan suatu teknik yang digunakan untuk mengurangi tabel dalam sklala besar. pada python dapat digunakan dengan menggunakan kode berikut :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
 <span class="n">df_pca</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
 <span class="c1"># initialize PCA with 2 components</span>
@@ -532,7 +526,7 @@ W_{i,j}=tfi,j\times\log \dfrac{N}{d_{fj}}
     <span class="n">distortions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">kmeanModel</span><span class="o">.</span><span class="n">inertia_</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>pada kode di atas, dilakukan perulanngan sebanyak 10 dengan menggunakan data_pca yang telah direduksi. untuk melihat hasil elbow, dapat divisualisasikan melalui plot dengan kode sebagai berikut :</p>
+<p>pada kode di atas, dilakukan perulangan sebanyak 10 dengan menggunakan data_pca yang telah direduksi. untuk melihat hasil elbow, dapat divisualisasikan melalui plot dengan kode sebagai berikut :</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">distortions</span><span class="p">,</span> <span class="s1">&#39;bx-&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
@@ -638,13 +632,6 @@ W_{i,j}=tfi,j\times\log \dfrac{N}{d_{fj}}
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Topic Modelling - LSA (Latent Semantic Analysis)</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="References.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">References</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

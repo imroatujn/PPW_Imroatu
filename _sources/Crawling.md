@@ -1,6 +1,6 @@
 # Crawling Data
 
-Crawling data merupakan proses pengumpulan data yang dilakukan pada suatu web atau sumber lain dari internet seperti media sosial, berita, artikel, dll.
+*Crawling data* merupakan proses pengumpulan data yang dilakukan pada suatu web atau sumber lain dari internet seperti media sosial, berita, artikel, dll.
 
 Salah satu framework pada python yang digunakan untuk crawling data adalah scrapy. Scrapy dapat digunakan untuk mengekstrak, memproses dna menyimpan data dari sebuah website dengan skala besar ke format yang diinginkan.
 

@@ -2,7 +2,7 @@
 
 Data yang telah didapatkan merupakan data mentah yang butuh dilakukan preprosesing sebelum masuk ke dalam tahap pemrosesan data.
 
-Text preprocessing digunakna untuk menyeleksi data text agar menjadi terstruktur melalui tahapan-tahapan preprosessing data.
+*Text preprocessing* digunakna untuk menyeleksi data text agar menjadi terstruktur melalui tahapan-tahapan preprosessing data.
 
 Preprosesing meliputi case folding, tokenisasi, stopword removal, dan Stemming.
 
@@ -128,7 +128,7 @@ list_stopwords = set(list_stopwords)
 
 *Stemming* merupakan tahap preprocessing yang digunakan untuk mengubah semua kata ke dalam bentuk baku atau dasar. Pada python *stemming* dilakukan menggunakan algoritma nadzief andriani pada library sastrawi.
 
-Namun, pada topic modelling tidak diperlukan proses stem, dikarenakan setiap kata memiliki arti yang berbeda dan tujuan topic modelling adalah mengetahui proporsi term terhadap topik.
+Namun, pada topic modelling tidak diperlukan proses stem, dikarenakan setiap kata memiliki arti yang berbeda dan tujuan topic modelling adalah mengetahui proporsi *term* terhadap topik.
 
 berikut kode stemming :
 
