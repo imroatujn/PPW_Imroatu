@@ -135,11 +135,6 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="References.html">
-   References
-  </a>
- </li>
- <li class="toctree-l1">
   <a class="reference external" href="https://colab.research.google.com/drive/1j2h7P8EJizYgi7RJQYyJqSE0rkpttb18?usp=sharing">
    Code LSA
   </a>
@@ -528,6 +523,46 @@ title="Print to PDF"
 <h2>Stemming<a class="headerlink" href="#stemming" title="Permalink to this headline">#</a></h2>
 <p><em>Stemming</em> merupakan tahap preprocessing yang digunakan untuk mengubah semua kata ke dalam bentuk baku atau dasar. Pada python <em>stemming</em> dilakukan menggunakan algoritma nadzief andriani pada library sastrawi.</p>
 <p>Namun, pada topic modelling tidak diperlukan proses stem, dikarenakan setiap kata memiliki arti yang berbeda dan tujuan topic modelling adalah mengetahui proporsi term terhadap topik.</p>
+<p>berikut kode stemming :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># import Sastrawi package</span>
+<span class="kn">from</span> <span class="nn">Sastrawi.Stemmer.StemmerFactory</span> <span class="kn">import</span> <span class="n">StemmerFactory</span>
+<span class="kn">import</span> <span class="nn">swifter</span>
+
+
+<span class="c1"># membuat stemmer</span>
+<span class="n">factory</span> <span class="o">=</span> <span class="n">StemmerFactory</span><span class="p">()</span>
+<span class="n">stemmer</span> <span class="o">=</span> <span class="n">factory</span><span class="o">.</span><span class="n">create_stemmer</span><span class="p">()</span>
+
+<span class="c1"># sfungsi stemmer</span>
+<span class="k">def</span> <span class="nf">stemmed_wrapper</span><span class="p">(</span><span class="n">term</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">stemmer</span><span class="o">.</span><span class="n">stem</span><span class="p">(</span><span class="n">term</span><span class="p">)</span>
+
+<span class="n">term_dict</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="k">for</span> <span class="n">document</span> <span class="ow">in</span> <span class="n">dataPTA</span><span class="p">[</span><span class="s1">&#39;abstrak_stop&#39;</span><span class="p">]:</span>
+    <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">document</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">term</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">term_dict</span><span class="p">:</span>
+            <span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span>
+            
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">term_dict</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">term_dict</span><span class="p">:</span>
+    <span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="o">=</span> <span class="n">stemmed_wrapper</span><span class="p">(</span><span class="n">term</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">term</span><span class="p">,</span><span class="s2">&quot;:&quot;</span> <span class="p">,</span><span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">])</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="n">term_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;------------------------&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># stemming pada dataframe</span>
+<span class="k">def</span> <span class="nf">get_stemmed_term</span><span class="p">(</span><span class="n">document</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">term_dict</span><span class="p">[</span><span class="n">term</span><span class="p">]</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">document</span><span class="p">]</span>
+
+<span class="n">dataPTA</span><span class="p">[</span><span class="s1">&#39;abstrak_stem&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dataPTA</span><span class="p">[</span><span class="s1">&#39;abstrak_stop&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">swifter</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_stemmed_term</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dataPTA</span><span class="p">[</span><span class="s1">&#39;abstrak_stem&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
 </section>
 </section>
 
