@@ -8,11 +8,11 @@ Algoritma Topic Modelling :
 
 \-    Setiap topik berhubungan dengan kata-kata.
 
-Terdapat beberapa macam topic modelling, yang sering digunakan adalah Latent Dirchlet Allocation (LDA) dan Latent Semantic Analysis (LSA).
+Terdapat beberapa macam topic modelling, yang sering digunakan adalah *Latent Dirchlet Allocation* (LDA) dan L*atent Semantic Analysis* (LSA).
 
 ## Mengapa Menggunakan LSA?
 
-Latent Semantic Analysis (LSA) adalah salah satu pemodelan topik yang mengekstrak topik dari dokumen teks yang diberikan. pembelajaran LSA meliputi dekomposisi matriks pada matriks term dokumen menggunakan dekomposisi nilai Singular. LSA mengambil matriks dokumen dan istilah dan mencoba menguraikannya menjadi dua matriks yang terpisah yaitu :
+*Latent Semantic Analysis* (LSA) adalah salah satu pemodelan topik yang mengekstrak topik dari dokumen teks yang diberikan. pembelajaran LSA meliputi dekomposisi matriks pada matriks term dokumen menggunakan dekomposisi nilai Singular. LSA mengambil matriks dokumen dan istilah dan mencoba menguraikannya menjadi dua matriks yang terpisah yaitu :
 
 \-    Matriks topik dokumen
 

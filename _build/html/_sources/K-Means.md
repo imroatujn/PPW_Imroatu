@@ -2,7 +2,7 @@
 
 K-Means Merupakan salah satu metode data mining untuk mengelompokkan suatu data ke dalam klaster. metode ini melakukan penghitungan jarak berdasarkan k tertangga terdekatnya
 
-untuk menghiyung jarak, dapat emnggunakan euclidean distance dengan rumus :
+untuk menghitung jarak, dapat menggunakan euclidean distance dengan rumus :
 
 $$
 d=\sqrt{\left(x_{2}-x_{1}\right)^{2}+\left(y_{2}-y_{1}\right)^{2}}
@@ -80,7 +80,7 @@ dfp
 
 ### Melakukan Reduksi Dimensi
 
-reduksi dimensi merupakan langkah yang digunakan untuk mengurangi fitur, pada tahap ini dilakukan dengan metode PCA. metode PCA (*Principal component analysis*) merupakan suatu teknik yang digunakan untukmengurangi tabel dalam sklaa besar. pada python dapat digunakan dengan menggunakan kode berikut :
+reduksi dimensi merupakan langkah yang digunakan untuk mengurangi fitur, pada tahap ini dilakukan dengan metode PCA. metode PCA (*Principal component analysis*) merupakan suatu teknik yang digunakan untuk mengurangi tabel dalam sklala besar. pada python dapat digunakan dengan menggunakan kode berikut :
 
 ```
 from sklearn.decomposition import PCA
@@ -109,7 +109,7 @@ for k in K:
     distortions.append(kmeanModel.inertia_)
 ```
 
-pada kode di atas, dilakukan perulanngan sebanyak 10 dengan menggunakan data_pca yang telah direduksi. untuk melihat hasil elbow, dapat divisualisasikan melalui plot dengan kode sebagai berikut :
+pada kode di atas, dilakukan perulangan sebanyak 10 dengan menggunakan data_pca yang telah direduksi. untuk melihat hasil elbow, dapat divisualisasikan melalui plot dengan kode sebagai berikut :
 
 ```python
 plt.figure(figsize=(16,8))
