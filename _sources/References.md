@@ -8,4 +8,4 @@
 
 4. Navlani, Avinash. 2021. Latent Semantic Indexing Using Scickit-Learn. Diakses pada tangga 15 Juni 2022. https://machinelearninggeek.com/latent-semantic-indexing-using-scikit-learn/.
 
-5. Tineges, Rian. Tahapan Text Preprocessing dalam Teknik Pengolahan Data. Diakses pada tanggal 15 Juni 2022. https://www.dqlab.id/tahapan-text-preprocessing-dalam-teknik-pengolahan-data
+5. Tineges, Rian. Tahapan Text Preprocessing dalam Teknik Pengolahan Data. Diakses pada tanggal 15 Juni 2022. https://www.dqlab.id/tahapan-text-preprocessing-dalam-teknik-pengolahan-data.
