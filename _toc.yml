@@ -8,7 +8,6 @@ chapters:
 - file: Preprocessing
 - file: Topic Modelling (LSA)
 - file: K-Means
-- file: References
 - url: https://colab.research.google.com/drive/1j2h7P8EJizYgi7RJQYyJqSE0rkpttb18?usp=sharing
   title: Code LSA
 - url: https://colab.research.google.com/drive/1t8ADLu45qO_nkHblaOKYS-1ac1rHBiCP?usp=sharing

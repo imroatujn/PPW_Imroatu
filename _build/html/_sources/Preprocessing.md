@@ -129,3 +129,46 @@ list_stopwords = set(list_stopwords)
 *Stemming* merupakan tahap preprocessing yang digunakan untuk mengubah semua kata ke dalam bentuk baku atau dasar. Pada python *stemming* dilakukan menggunakan algoritma nadzief andriani pada library sastrawi.
 
 Namun, pada topic modelling tidak diperlukan proses stem, dikarenakan setiap kata memiliki arti yang berbeda dan tujuan topic modelling adalah mengetahui proporsi term terhadap topik.
+
+berikut kode stemming :
+
+```python
+# import Sastrawi package
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+import swifter
+
+
+# membuat stemmer
+factory = StemmerFactory()
+stemmer = factory.create_stemmer()
+
+# sfungsi stemmer
+def stemmed_wrapper(term):
+    return stemmer.stem(term)
+
+term_dict = {}
+
+for document in dataPTA['abstrak_stop']:
+    for term in document:
+        if term not in term_dict:
+            term_dict[term] = ' '
+            
+print(len(term_dict))
+print("------------------------")
+
+for term in term_dict:
+    term_dict[term] = stemmed_wrapper(term)
+    print(term,":" ,term_dict[term])
+    
+print(term_dict)
+print("------------------------")
+
+
+# stemming pada dataframe
+def get_stemmed_term(document):
+    return [term_dict[term] for term in document]
+
+dataPTA['abstrak_stem'] = dataPTA['abstrak_stop'].swifter.apply(get_stemmed_term)
+print(dataPTA['abstrak_stem'])
+```
+
