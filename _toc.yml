@@ -8,7 +8,7 @@ chapters:
 - file: Preprocessing
 - file: Topic Modelling (LSA)
 - file: References
-- file: 19-108_Imro'atu Janatin Naim_KMeans
+- file: K-Means
 - url: https://colab.research.google.com/drive/1rpirlPV6OcvMYxuMZ7x7_zR6ABRwPmB5?usp=sharing
   title: Code LSA
 - url: https://colab.research.google.com/drive/1t8ADLu45qO_nkHblaOKYS-1ac1rHBiCP?usp=sharing
