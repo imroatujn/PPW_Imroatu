@@ -53,7 +53,7 @@ import scrapy
 class scrapPTA(scrapy.Spider):
     name = 'PTA'
     allowed_domains = ['pta.trunojoyo.ac.id']
-    start_urls = ['https://pta.trunojoyo.ac.id/c_search/byprod/10/'+str(x)+" " for x in range(2,20)]
+    start_urls = ['https://pta.trunojoyo.ac.id/c_search/byprod/7/'+str(x)+" " for x in range(2,20)]
 
     def parse(self, response):
         for link in response.css('a.gray.button::attr(href)') :

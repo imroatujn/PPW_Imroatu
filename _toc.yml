@@ -7,9 +7,9 @@ chapters:
 - file: Crawling
 - file: Preprocessing
 - file: Topic Modelling (LSA)
-- file: References
 - file: K-Means
-- url: https://colab.research.google.com/drive/1rpirlPV6OcvMYxuMZ7x7_zR6ABRwPmB5?usp=sharing
+- file: References
+- url: https://colab.research.google.com/drive/1j2h7P8EJizYgi7RJQYyJqSE0rkpttb18?usp=sharing
   title: Code LSA
 - url: https://colab.research.google.com/drive/1t8ADLu45qO_nkHblaOKYS-1ac1rHBiCP?usp=sharing
   title: Code k-means
