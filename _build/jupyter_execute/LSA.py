@@ -3,6 +3,12 @@
 
 # # Keseluruhan Code
 
+# In[1]:
+
+
+
+
+
 # # Import Library
 
 # In[1]:
